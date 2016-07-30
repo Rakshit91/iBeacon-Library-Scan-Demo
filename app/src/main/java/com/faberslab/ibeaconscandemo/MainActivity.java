@@ -8,10 +8,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.pm.PackageManager;
-import android.graphics.Color;
 import android.location.LocationManager;
 import android.os.Build;
-import android.os.Handler;
 import android.support.v4.content.LocalBroadcastManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -267,7 +265,7 @@ public class MainActivity extends AppCompatActivity {
             ViewHolder viewHolder;
             // General ListView optimization code.
             if (view == null) {
-                view = mInflator.inflate(R.layout.listitem_device, null);
+                view = mInflator.inflate(R.layout.item_ibeacon, null);
                 viewHolder = new ViewHolder();
                 viewHolder.txt_name = (TextView) view.findViewById(R.id.txt_name_value);
                 viewHolder.txt_mac = (TextView) view.findViewById(R.id.txt_mac_value);
