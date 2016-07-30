@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="3dp"
+    tools:context="com.faberslab.ibeaconscandemo.BeaconDetailsActivity">
+
+    <TextView
+        android:id="@+id/txt_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name" />
+
+    <TextView
+        android:id="@+id/txt_name_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/txt_name"
+        android:text=" : iBeacon" />
+
+    <TextView
+        android:id="@+id/txt_rssi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/txt_rssi_value"
+        android:text="RSSI" />
+
+    <TextView
+        android:id="@+id/txt_rssi_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text=" : -64" />
+
+    <TextView
+        android:id="@+id/txt_mac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_name"
+        android:text="Mac" />
+
+    <TextView
+        android:id="@+id/txt_mac_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_rssi"
+        android:layout_toRightOf="@id/txt_name"
+        android:text=" : 12:34:56:78:89" />
+
+    <TextView
+        android:id="@+id/txt_uuid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_mac"
+        android:text="UUID" />
+
+    <TextView
+        android:id="@+id/txt_uuid_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_mac"
+        android:layout_toRightOf="@id/txt_name"
+        android:text=" : " />
+
+    <TextView
+        android:id="@+id/txt_major"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_uuid"
+        android:text="Major" />
+
+    <TextView
+        android:id="@+id/txt_major_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_uuid"
+        android:layout_toRightOf="@id/txt_name"
+        android:text=" : " />
+
+    <TextView
+        android:id="@+id/txt_minor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_major"
+        android:text="Minor" />
+
+    <TextView
+        android:id="@+id/txt_minor_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_major"
+        android:layout_toRightOf="@id/txt_name"
+        android:text=" : " />
+
+    <LinearLayout
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/txt_minor"
+        android:background="#dddddd"
+        android:orientation="vertical" />
+
+</RelativeLayout>
